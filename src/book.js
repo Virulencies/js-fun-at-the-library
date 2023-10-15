@@ -1,6 +1,14 @@
-function createTitle() {
-  
+function createTitle(title) {
+  var words = title.split(" ")
+
+  if (words[0] === "The") {
+    return (title)
+  }
+  else {
+    return ("The " + title);
 }
+}
+
 
 module.exports = {
   createTitle,
