@@ -21,8 +21,14 @@ function buildMainCharacter(charName, charAge, identifyAs) {
 }
 
 function saveReview(reviews, reviewsArray) {
+
+  if (reviewsArray.includes(reviews)) {
+    return ;
+  } else {
   return reviewsArray.push(reviews);
 }
+}
+
 
 module.exports = {
   createTitle,
