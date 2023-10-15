@@ -9,11 +9,25 @@ function createTitle(title) {
 }
 }
 
+function buildMainCharacter(charName, charAge, identifyAs) {
+  var name = charName;
+  var age = charAge;
+  var pronouns = identifyAs;
+  return ( {
+    name,
+    age,
+    pronouns,
+  });
+}
+
+function saveReview(reviews, reviewsArray) {
+  return reviewsArray.push(reviews);
+}
 
 module.exports = {
   createTitle,
-  // buildMainCharacter,
-  // saveReview,
+  buildMainCharacter,
+  saveReview,
   // calculatePageCount,
   // writeBook,
   // editBook
