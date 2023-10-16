@@ -1,7 +1,7 @@
 function createTitle(title) {
-  var words = title.split(" ")
+  var words = title.split("")
 
-  if (words[0] === "The") {
+  if (title.startsWith("The ")) {
     return (title)
   }
   else {
@@ -29,12 +29,20 @@ function saveReview(reviews, reviewsArray) {
 }
 }
 
+function calculatePageCount(bookTitle){
+  var pagePerLetter = 20;
+  var letters = bookTitle.length;
+  return letters * pagePerLetter;
+  }
+  
+
+
 
 module.exports = {
   createTitle,
   buildMainCharacter,
   saveReview,
-  // calculatePageCount,
+  calculatePageCount,
   // writeBook,
   // editBook
 }
