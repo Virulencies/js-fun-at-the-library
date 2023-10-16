@@ -24,9 +24,13 @@ function addBook(library, book) {
   }
 }
 
+function checkoutBook() {
+  
+}
+
 module.exports = {
    createLibrary,
    addBook,
-  // checkoutBook,
+   checkoutBook,
   // takeStock
 };
